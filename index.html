@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <title>Weather Vista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="caixa-maior">
+      <input class="input-cidade" placeholder="Digite o nome da sua cidade" />
+      <button class="botao-buscar" type="button" onclick="cliqueiNoBotao()">
+        Pesquisar
+      </button>
+
+      <div class="caixa-media">
+        <h2 class="cidade">Tempo em Joinville</h2>
+        <p class="temp">21°C</p>
+        <div class="caixa-menor">
+          <img
+            class="img-previsao"
+            src="https://openweathermap.org/img/wn/04n.png"
+            alt="icone do clima"
+          />
+          <p class="texto-previsao">Nublado</p>
+        </div>
+        <p class="umidade">Umidade: 80%</p>
+      </div>
+    </div>
+  </body>
+</html>
