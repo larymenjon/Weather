@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Weather Vista</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,6 +14,14 @@
     />
   </head>
   <body>
+    <div class="barra-fixa">
+      <img
+        class="logo"
+        src="./img/WhatsApp_Image_2024-10-23_at_11.53.45-removebg-preview.png"
+        alt="Logomarca"
+      />
+    </div>
+
     <div class="caixa-maior">
       <input class="input-cidade" placeholder="Digite o nome da sua cidade" />
       <button class="botao-buscar" type="button" onclick="cliqueiNoBotao()">

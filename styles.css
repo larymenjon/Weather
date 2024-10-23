@@ -11,9 +11,27 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://fastly.picsum.photos/id/511/1920/1089.jpg?hmac=CrinUv6RVfXHY0RKWA7vSh_HpIQxHj2xJoiIA47hj1w");
-  background-size: cover;
-  background-position: center;
+  background-image: url("https://images.pexels.com/photos/1431822/pexels-photo-1431822.jpeg");
+  background-size: cover; /* Ajusta a imagem ao tamanho da tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Não repete a imagem */
+}
+
+.barra-fixa {
+  position: fixed; /* Fixa a barra no topo */
+  top: 0; /* Coloca a barra no topo */
+  left: 0; /* Alinha à esquerda */
+  width: 100%; /* Largura total da tela */
+  background-color: #7c7c7c2b(0, 0, 0, 0.7); /* Fundo semitransparente */
+  display: flex; /* Usado para alinhar a logomarca */
+  justify-content: center; /* Centraliza horizontalmente */
+  padding: 10px 0; /* Espaçamento interno */
+  z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+}
+
+.logo {
+  max-width: 250px; /* Largura máxima da logomarca */
+  height: auto; /* Mantém a proporção */
 }
 
 .caixa-maior {
@@ -24,6 +42,7 @@ body {
   padding: 20px;
   width: 95%;
   text-align: center;
+  margin-top: 80px; /* Espaço para a barra fixa */
 }
 
 .input-cidade {
@@ -45,10 +64,6 @@ body {
   background-color: #7c7c7c2b;
   cursor: pointer;
   float: right;
-}
-
-.img-buscar {
-  width: 20px;
 }
 
 .caixa-media {
